@@ -43,6 +43,7 @@
     <Compile Include="GeenToverspreukException.cs" />
     <Compile Include="IToverstaf.cs" />
     <Compile Include="Kookpot.cs" />
+    <Compile Include="KookpotOntploffingException.cs" />
     <Compile Include="Toverstaf.cs" />
     <Compile Include="VerkeerdeIngredientenException.cs" />
     <Compile Include="VerkeerdeWoordenException.cs" />

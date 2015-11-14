@@ -28,6 +28,12 @@ namespace Wizard
 
         public String Toverspreuk(List<String> ing, List<String> words)
         {
+            if (words == null)
+            {
+                throw new GeenToverspreukException("");
+            }
+            else
+            {
             if (ing == null || ing.Count == 0)
             {
                 throw new GeenIngredientenException();
@@ -75,7 +81,7 @@ namespace Wizard
                             else
                             {
                                 //Als het geen zilvere ketel is ontploft het!
-                                return "BOOM!";
+                                throw new KookpotOntploffingException();
                             }
                         }
                         else { throw new VerkeerdeIngredientenException(); }
@@ -103,6 +109,7 @@ namespace Wizard
                 }
 
                 throw new GeenToverspreukException("Er is geen toverspreuk met " + words.Count + " woorden");
+                }
             }
         }
 
